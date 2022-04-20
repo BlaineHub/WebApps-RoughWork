@@ -1,0 +1,9 @@
+ID,NAME,STARS,PRICE,ADDRESS
+1,Dominos,3,30, Clondalkin
+2,Nandos,5,40, Liffey Valley
+3,Burger King,4,20, Tallaght
+4,McDonalds,2,20, Dundrum 
+5,Pandinis,5,30, Fonthill road
+6,Woodfire Pizza,5,50, Knockmitten
+
+

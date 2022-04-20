@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html land="'en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo App</title>
+    <head>
+        <link href="../static/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class='container'>
+            <h1>Geo Locator</h1>
+            <h3>Please select a file to be uploaded</h3>
+            <div class="message2">
+                {{text | safe}}
+            </div>
+            <form action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file"> <br>
+                <button type="submit" name="action" value="upload">Upload</button>
+            </form>
+                <div class="dataframe">
+                    {% block content %}
+                    {% if text=='file uploaded successfully' %}
+                    {% include 'dataframe.html' %}
+                    {% include 'download.html' %}
+                    {% else %}
+                    {% endif %}
+                    {% endblock %}
+                </div>
+        </div>   
+    </body>
+</html>
